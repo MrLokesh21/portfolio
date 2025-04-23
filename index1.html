@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--====css files==-->
+    <link rel="stylesheet" href="style1.css">
+    
+
+</head>
+<body>
+ <div id="header">
+ <div class="container">
+    <nav>
+        <img src="images/download.jpg" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+
+        </ul>
+        
+    </nav>
+    <div class="header-text">
+        <p>Java fullstack Developer</p>
+        <h1>Hi,I'm <span>Lokesh</span> <br>Nakka from Tirupati</h1>
+    </div>
+  </div>
+</div> 
+
+<!---About-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-co-1">
+                <img src="images/loki.jpg">
+            </div>
+            <div class="about-co-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> <br><br>An IT enthusiast with passion and strong motivational skills 
+                    looking to start my career in the technical field with an entry-level career. 
+                    I have a keen interest in Software Development, troubleshooting, and other emerging fields and technologies. 
+                    I have practical knowledge of Programming with experience in Java, C, and Python.
+                    I konw Database technologies in mySql. 
+                    I also know some front-end tools like HTML, CSS, and JavaScript.
+                     In addition to great algorithmic skills, I have good interpersonal skills empowering me to perform tasks in a team where I am willing to enhance innovative solutions.
+                      I am a fast learner able to develop new skills and competencies which I look forward to doing in a dynamic organization </p>
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                         <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                      </div>
+
+                      <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <p>Backend Technologies:</p>
+                        <li><span>Java</span><br></li>
+                        <li><span>C-programming</span><br></li>
+                        <li><span>Basics of Python</span><br></li>
+
+                        <p >Database Technologies: </p>
+                        <li><span>MySql</span><br></li>
+
+                        <p >Frontend Technologies:</p>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>javaScript</span><br></li>
+                        
+                      </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                        <li><span>May 2024- Nov 2024 </span><br>Java FullStack Developer Intern at TAP Academy ,Btm Layout,Karnataka </li>
+                        
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>2020-2024</span><br>ECE Stream at Annamchrya Institute Of Technology And Sciences,Tirupati </li>
+                        <li><span>2018-2020</span><br>CSE + MPC at sri Lakshmi Vocational Junior College,Tirupati</li>
+                        <li><span>2017-2018</span><br>SSC at Sri kodanda Rama Swamy High School,Tirupati</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                        <li><span>To-Do List</span><br>It is developed by using Fronted Technologiesw</li>
+                        
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----Contact---->
+
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <p><a href="mailto:lkh12151109@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i>lkh12151109@gmail.com</a></p>
+            <p><a href="tel:+919391911455"> <i class="fa-solid fa-phone"></i>+91 9391911455</a></p>
+            
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/lokesh-nakka" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/mr___lokin_23" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+                
+            </div>
+            
+                <a href="documents/LokeshCv.pdf"  download class="btn btn2">Download Cv</a>
+            
+        </div>
+        
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+       
+    </div>
+
+</div>
+<div>
+    <div class="copyright">
+        <p> Copyright &copy; Lokesh Nakka. All rights reserved.</p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyaftPPGot0oxDq28ITbeRp9_UZqpJhqUVPwTAZrQm7eBEWXGhYtzJKkFESfu5QYw9T/exec'
+    const form = document.forms['submit-to-google-sheet']
+     const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
